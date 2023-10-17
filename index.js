@@ -12,15 +12,29 @@ app.get('/', (req, res, next) => {
 	res.send('node express api <br> by bobyDev');
 });
 
-//Issue 3
 app.get('/hours', (req, res, next) => {
   res.sendfile("assets/1a_dev_hours.json");
 });
 
-//Issue 4
 app.get('/size', (req, res, next) => {
 	res.sendfile("assets/1a_proxy_size.json");
   });
+
+app.get('/data1', (req, res, next) => {
+	res.sendfile("assets/Data_Test1.json");
+});
+
+app.get('/data2', (req, res, next) => {
+	res.sendfile("assets/Data_Test2.json");
+});
+
+app.get('/data3', (req, res, next) => {
+	res.sendfile("assets/Data_Test3.json");
+});
+
+app.get('/data4', (req, res, next) => {
+	res.sendfile("assets/Data_Test4.json");
+});
 
 app.listen(port,  () => 
 	console.log('listening on port ' + port
