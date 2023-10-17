@@ -30,6 +30,7 @@ app.get('/data2', (req, res, next) => {
 	res.sendfile("assets/Data_Test2.json");
 });
 
+//Issue #7
 app.get('/data3', (req, res, next) => {
 	res.sendfile("assets/Data_Test3.json");
 });
