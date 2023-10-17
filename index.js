@@ -20,10 +20,12 @@ app.get('/size', (req, res, next) => {
 	res.sendfile("assets/1a_proxy_size.json");
   });
 
+//Issue #5  
 app.get('/data1', (req, res, next) => {
 	res.sendfile("assets/Data_Test1.json");
 });
 
+//Issue #6
 app.get('/data2', (req, res, next) => {
 	res.sendfile("assets/Data_Test2.json");
 });
